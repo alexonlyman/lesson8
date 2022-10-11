@@ -20,5 +20,18 @@ public class Main {
             System.out.print(i+ " ");
         }
 
+        System.out.println();
+
+        int population = 12_000_000;
+        int populationKf = population/1000;
+        int fertility = populationKf*17;
+        int mortality = populationKf*8;
+        int totalGrowthPerYear = fertility+mortality;
+        int totalPopulation = 0;
+        for (int year = 0; year <=10; year++){
+            totalPopulation = totalPopulation+population+totalGrowthPerYear;
+            System.out.println(year);
+        }
+
     }
 }
